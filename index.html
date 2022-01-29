@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 13</title>
+</head>
+<link rel="stylesheet" href="TUGAS13.css">
+
+<body>
+    <div id="" class="w3-container">
+        <img src="valorant2.jpg" alt="" width="1300px" height="150px">
+
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openitem('BestWeapon')">Best Weapon</button>
+        <button class="w3-bar-item w3-button" onclick="openitem('BestMap')">Best Map</button>
+        <button class="w3-bar-item w3-button" onclick="openitem('TopCharacter')">Top Character</button>
+        <button class="w3-bar-item w3-button" onclick="openitem('Topplayer')">Top player</button>
+        <button class="w3-bar-item w3-button" onclick="openitem('OurDiscordServer')">Discord</button>
+        <button class="w3-bar-item w3-button" onclick="openitem('home')">home</button>
+    </div>
+    <div id="home" class="w3-container item w3-animated-opacity">
+        <center>
+            <h1>Whats Good ?</h1>
+            <p>here you can get The lastest news about our beloved Game </p>
+            <h1>Valorant</h1>
+            <img src="valorant.png" alt="">
+            <p></p>
+    </div>
+
+    <div id="BestWeapon" class="w3-container item w3-animate-opacity" style="display: none;">
+        <h1>Vandal</h1>
+        <img src="vandal.jpg" alt="" width="50%">
+        <p>The AR-762 Vandal is a Rifle that is a primary weapon in VALORANT. The Vandal is a fully automatic rifle that sits at 2,900 Credits. It is the counterpart to the Phantom, and is unique for its high DPS at any range.
+
+        </p>
+    </div>
+    <div id="BestMap" class="w3-container item w3-animate-fading" style="display:none">
+        <h1>Bind</h1>
+        <img src="bind.png" alt="" width="50%">
+        <p>
+            Bind is a Valorant map that has two sites and is characterized by its unique one-way teleporters.
+        </p>
+
+    </div>
+    <div id="TopCharacter" class="w3-container item w3-animate-bottom" style="display: none;">
+        <h1>Yoru</h1>
+        <img src="Yoruvalorant.png" alt="">
+        <p>Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.</p>
+    </div>
+    <div id="Topplayer" class="w3-container item w3-animate-zoom" style="display: none;">
+        <h1>ScreaM</h1>
+        <img src="Scream.jpg" alt="" width="50%">
+        <p>Adil "ScreaM" Bernlitom is one of the best player in Valorant</p>
+    </div>
+    <div id="OurDiscordServer" class="w3-container item w3-animate-top" style="display: none;">
+        <h1>Our Discord server</h1>
+        <a href=" https://discord.gg/8qEYSdT9ym "><img src="discord.jpg" alt="click_here" width="20%"></a>
+        <p>join our discord server </p>
+    </div>
+
+    <script>
+        function openitem(namaitem) {
+            var i;
+            var x = document.getElementsByClassName("item ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            document.getElementById(namaitem).style.display = "block ";
+        }
+    </script>
+
+</body>
+
+</html>
